@@ -17,7 +17,7 @@ export const newTask = async (req, res, next) => {
             message: "Task added successfully"
         })
     } catch (error) {
-        next(error.message)
+        next(error)
     }
 
 };
@@ -34,7 +34,7 @@ export const getMyTasks = async (req, res, next) => {
             tasks
         })
     } catch (error) {
-        next(error.message)
+        next(error)
     }
 
 }
@@ -54,7 +54,7 @@ export const updateTask = async (req, res, next) => {
             message: "Task updated!"
         })
     } catch (error) {
-        next(error.message)
+        next(error)
     }
 }
 
@@ -71,7 +71,7 @@ export const deleteTask = async (req, res, next) => {
             message: "Task deleted!"
         })
     } catch (error) {
-        next(error.message)
+        next(error)
     }
 }
 
